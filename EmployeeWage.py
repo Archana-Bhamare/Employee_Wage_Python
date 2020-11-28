@@ -1,0 +1,1 @@
+print("Welcome TO Employee Wage Computation Program")
