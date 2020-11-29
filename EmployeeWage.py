@@ -8,6 +8,8 @@ class EmployeeWage:
     EMP_WAGE_PER_HOUR = 20
     NUM_OF_WORKING_DAYS = 20
     MAX_HRS_IN_MONTH = 100
+    dailyWages = []
+    day = {}
 
     def checkEmpAttendance(self):
         attendance = random.randint(0, 2)
@@ -32,8 +34,11 @@ class EmployeeWage:
             dailyWage = dailyWage = EmployeeWage.EMP_WAGE_PER_HOUR * EmployeeWage.empHours
             print(f"Day : {totalWorkingDays}\tEmployee Hours : {EmployeeWage.empHours}")
             print(f"Employee Daily Wage : {dailyWage}")
+            EmployeeWage.dailyWages.append(dailyWage)
 
         totalSalary = EmployeeWage.EMP_WAGE_PER_HOUR * totalEmpHours
+        for (i,item) in enumerate(EmployeeWage.dailyWages,start=1):
+            print("Day : " + str(i) + "\tDailyWage : " + str(item))
         print(f"Employee Wage for Month is : {totalSalary}")
 
 
