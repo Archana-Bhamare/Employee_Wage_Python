@@ -22,7 +22,7 @@ class EmployeeWage:
 
     def calculateMonthlyWages(self):
         totalSalary = 0
-        for i in range(1, 21):
+        for i in range(EmployeeWage.NUM_OF_WORKING_DAYS):
             self.checkEmpAttendance()
             dailyWage = EmployeeWage.EMP_WAGE_PER_HOUR * EmployeeWage.empHours
             print(f"Employee daily Wage is : {dailyWage}")
