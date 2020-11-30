@@ -27,8 +27,8 @@ class EmployeeWage:
             dailyWage = EmployeeWage.EMP_WAGE_PER_HOUR * EmployeeWage.empHours
             print(f"Employee daily Wage is : {dailyWage}")
             totalSalary = totalSalary + dailyWage
-        else:
-            print(f"Employee Wage for Month is : {totalSalary}")
+        
+        print(f"Employee Wage for Month is : {totalSalary}")
 
 
 if __name__ == "__main__":
