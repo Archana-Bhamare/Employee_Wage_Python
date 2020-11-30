@@ -31,7 +31,7 @@ class EmployeeWage:
             totalWorkingDays += 1
             self.checkEmpAttendance()
             totalEmpHours += EmployeeWage.empHours
-            dailyWage = dailyWage = EmployeeWage.EMP_WAGE_PER_HOUR * EmployeeWage.empHours
+            dailyWage = EmployeeWage.EMP_WAGE_PER_HOUR * EmployeeWage.empHours
             print(f"Day : {totalWorkingDays}\tEmployee Hours : {EmployeeWage.empHours}")
             print(f"Employee Daily Wage : {dailyWage}")
             EmployeeWage.dailyWages.append(dailyWage)
